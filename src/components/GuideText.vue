@@ -25,14 +25,23 @@
 
             <div class="modal-body">
 
-                <img
-                    :src="guide.image"
-                    class="img-fluid mb-3"
+                <div
+                    v-for="(block, index) in guide.content"
+                    :key="index"
+                    class="mb-3"
                 >
 
-                <p>
-                    {{ guide.text }}
-                </p>
+                    <img
+                        v-if="block.type === 'image'"
+                        :src="block.value"
+                        class="img-fluid rounded"
+                    >
+
+                    <p v-if="block.type === 'text'">
+                        {{ block.value }}
+                    </p>
+
+                </div>
 
             </div>
 

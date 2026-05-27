@@ -48,7 +48,7 @@
 
 import GuideCard from './components/GuideCard.vue'
 import GuideText from './components/GuideText.vue'
-
+import g1 from './assets/image.psd.jpg';
 export default {
 
     components: {
@@ -63,23 +63,64 @@ export default {
 
             guides: [
 
-                {
-                    title: 'Решение проблем с аэрографом.',
-                    
-                    image: 'https://www.mr-hobby.com/uploads/articles/01K4PGDWPJ2RWY4N7FV9KSKEX5.png',
-                    text: 'Решение различных неурядиц в формате Q&A.'
-                },
+    {
+        title: 'Решение проблем с аэрографом.',
 
-                {
-                  title: "Грунтовки.",
-                  image: "https://www.mr-hobby.com/uploads/articles/richeditor/9fN3OBBGQlOJj0zJRmSUGuZQQnGOrglJejzHTms8.jpg",
-                  text: "Все про грунтовки.",
+        image: 'https://www.mr-hobby.com/uploads/articles/01K4PGDWPJ2RWY4N7FV9KSKEX5.png',
 
-                }
+        content: [
 
-                
+        {
+            type: 'text',
+            value: 'WIP'
+        }
 
-            ]
+        
+
+    ]
+        
+    },
+
+    {
+        title: "Грунтовки.",
+
+        image: "https://www.mr-hobby.com/uploads/articles/richeditor/9fN3OBBGQlOJj0zJRmSUGuZQQnGOrglJejzHTms8.jpg",
+
+        content: [
+
+        {
+            type: 'image',
+            value: g1
+        },
+
+        {
+            type: 'text',
+            value: 'Про цифры на грунтовках.\n Они обозначают величину распыляемых частиц.\n Чем больше число - гладче итоговая поверхность.'
+        },
+
+        {
+            type: 'image',
+            value: 'https://www.mr-hobby.com/uploads/articles/richeditor/pWNlscNXaF8Wum1QEJ3x8jotFGrod0BkZbpmVhWb.jpg'
+        },
+
+        {
+            type: 'text',
+            value: 'Помимо стандартных грунтовок на сольвентовом растворителе(Mr finishing surfaser, base) Существуют более безопасные аналоги на спиртовом растворителе (aqueous).\nТакже существует водная серия базовых слоев acrysion которую можно разбавлять водой.'
+        },
+        {
+            type: 'image',
+            value: 'https://www.mr-hobby.com/uploads/articles/richeditor/u3bWxAwRcAdtKsO3pjBgjmZuWsrS1zAZEseZNgW4.jpg'
+        },
+        {
+            type: 'text',
+            value: 'Собвственно сама причина по которой нужна грунтовка это наличие адгезивного связующего вещества с пластиком. На сольвенте это вещество приваривается к пластику создавая эту адгезию.'
+        },
+
+
+    ]
+    }
+
+]
 
         }
     },
